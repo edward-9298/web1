@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 15px;
+  }
+  ol {
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 25px;
+  }
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol {
+    padding-left: 33px;
+  }
+  #article {
+    padding-left: 35px;
+  }
+  @media (max-width: 600px) {
+    #grid {
+      display: block;
+    }
+    h1 {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: none;
+    }
+    ol {
+    border-right: none;
+    }
